@@ -1,0 +1,119 @@
+body {
+    user-select: none;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(218deg 50% 91%);
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .screen-1 {
+    background: hsl(213deg 85% 97%);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 0 0 2em hsl(231deg 62% 94%);
+    gap: 2em;
+  }
+
+  .logo {
+    margin-top: -3em;
+  }
+
+  .email,
+  .password,
+  .graduation-year {
+    background: #fff;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    border-radius: 20px;
+    color: black;
+    margin-top: -1em;
+  }
+
+  .email
+  {
+    margin-top: -5em;
+  }
+
+  .email input,
+  .password input,
+  .graduation-year select {
+    outline: none;
+    border: none;
+    width: 100%;
+  }
+
+  .graduation-year
+  {
+    margin-top: 0.5em;
+  }
+
+  .graduation-year select
+  {
+    background-color: white;
+  }
+
+  .email::placeholder,
+  .password::placeholder {
+    color: hsl(0deg 0% 0%);
+    font-size: 0.9em;
+  }
+
+  .ion-icon {
+    color: hsl(0deg 0% 30%);
+    margin-bottom: -.2em;
+  }
+
+  .login {
+    padding: 1em;
+    color: white;
+    background: hsl(218, 78%, 54%);
+    color: hsl(0 0 100);
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .footer {
+    display: flex;
+    font-size: 0.7em;
+    color: hsl(0deg 0% 37%);
+    gap: 14em;
+    padding-bottom: 10em;
+  }
+
+  .footer span {
+    cursor: pointer;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  .password
+  {
+      margin-top: 2%;
+  }
+
+  .footer span:hover{
+      color: rgb(45, 111, 229);
+  }
+
+  .footer
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer span{
+    font-size: 0.7vw;
+  }

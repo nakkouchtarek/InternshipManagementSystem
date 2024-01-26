@@ -1,0 +1,15 @@
+.drop-zone {
+border: 2px dashed #ccc;
+padding: 20%;
+text-align: center;
+cursor: pointer;
+position: relative;
+}
+
+.drop-zone:hover {
+background-color: #f8f8f8;
+}
+
+.drop-zone i {
+font-size: 48px;
+}

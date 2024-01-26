@@ -1,0 +1,40 @@
+<style>
+    .container {
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .statistic-image {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+    }
+
+    iframe
+    {
+        margin-bottom: 5%;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+<h2>Here are the statistics for the day: </h2>
+<br/>
+<iframe src="../graphs/internship_durations.html" width="1000" height="600"></iframe>
+<iframe src="../graphs/internships_by_theme.html" width="1000" height="600"></iframe>
+<iframe src="../graphs/internships_per_theme.html" width="1000" height="600"></iframe>
+<iframe src="../graphs/report_types.html" width="1000" height="600"></iframe>
+<iframe src="../graphs/students_per_year.html" width="1000" height="600"></iframe>
+
+</div>

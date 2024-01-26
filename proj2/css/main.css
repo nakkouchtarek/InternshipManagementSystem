@@ -1,0 +1,84 @@
+body {
+    font-family: "DM Sans", sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+#side-bar {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: #2d6fe5;
+}
+
+#rest-page {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: white;
+}
+
+#profile-zone {
+    height: 15%;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+#section-zone {
+    height: 85%;
+}
+
+#header
+{
+    height: 10%;
+    background-color: white;
+    display: flex;
+}
+
+#header h1
+{
+    width: 94%;
+    padding-left: 45%;
+}
+
+#header i
+{
+    width: 6%;
+    font-size: 4vh;
+    margin-top: 2%;
+}
+
+#header i:hover
+{
+    cursor: pointer;
+}
+
+#content
+{
+    background-color: #f0f0f0;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+#section-zone div
+{
+    border-bottom: 2px solid black;
+    padding: 3%;
+    transition: ease-in-out 0.15s;
+}
+
+#section-zone div:hover {
+    background-color: #1f4a98;
+    cursor: pointer;
+}
+
+table thead
+{
+    font-size: 1vw;
+    background-color: #2d6fe5;
+}

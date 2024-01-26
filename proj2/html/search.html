@@ -1,0 +1,99 @@
+<script src="../js/essential.js"></script>
+<center>
+<h1>Search form</h1>
+
+<form onsubmit="submitForm(event)">
+
+    <div class="form">
+    <i class="fa fa-search" onclick="submitForm(event)"></i>
+    <input type="text" class="form-control form-input" id="searchBar" placeholder="Search anything...">
+    </div>
+
+    <label class="checkbox-label">
+        Show Advanced Filters
+        <div class="toggle-switch">
+          <input type="checkbox" id="toggleFilters" onchange="toggleAdvancedFilters()">
+          <div class="toggle-slider"></div>
+        </div>
+      </label>
+
+    <div id="advancedFilters">
+
+        <div class="fancy-scroll">
+          <label for="docType">Theme:</label>
+          <div class="sec-2">
+            <ion-icon name="calendar-outline"></ion-icon>
+            <select id="themeCompany" name="companyName">
+              <option value="all">All</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="fancy-scroll">
+          <label for="docType">Company:</label>
+          <div class="sec-2">
+            <ion-icon name="calendar-outline"></ion-icon>
+            <select id="companyName" name="companyName">
+              <option value="all">All</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="fancy-scroll">
+          <label for="docType">Year Range:</label>
+          <div class="sec-2">
+            <ion-icon name="calendar-outline"></ion-icon>
+            <select id="yearRange" name="yearRange">
+              <option value="all">All</option>
+            </select>
+          </div>
+        </div>
+
+      </div>
+
+</form>
+
+</center>
+<script src="../js/search.js"></script>
+<script>
+loadSearch("","","","");
+</script>
+
+<style>
+
+  .fancy-scroll {
+    background: #fff;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    border-radius: 20px;
+    color: black;
+    margin-top: -1em;
+    width: 15%;
+    margin-left: 2%;
+  }
+
+  .fancy-scroll select {
+    outline: none;
+    border: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .fancy-scroll
+  {
+    margin-top: 0.5em;
+  }
+
+  .fancy-scroll select
+  {
+    background-color: white;
+  }
+
+  th, td
+  {
+    text-align: center;
+  }
+
+</style>
